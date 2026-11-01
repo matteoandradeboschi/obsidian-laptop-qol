@@ -1,0 +1,10 @@
+{
+  "id": "laptop-qol",
+  "name": "Laptop QoL",
+  "version": "0.1.0",
+  "minAppVersion": "1.14.4",
+  "description": "Toggleable quality-of-life tweaks for laptop users: swipe with two fingers on the touchpad to go back and forward between notes, and zoom out of the graph at the cursor.",
+  "author": "Matteo Andrade Boschi",
+  "authorUrl": "https://github.com/matteoandradeboschi",
+  "isDesktopOnly": true
+}

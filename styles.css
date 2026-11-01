@@ -1,0 +1,30 @@
+.swipe-nav-active { position: relative; overflow: hidden; }
+.swipe-nav-active > .view-content {
+  position: relative;
+  z-index: 1;
+  background: var(--background-primary);
+  will-change: transform, filter;
+}
+.swipe-nav-under {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: var(--background-primary);
+  pointer-events: none;
+  will-change: transform, filter;
+}
+.swipe-nav-under.swipe-nav-over { z-index: 2; }
+.swipe-nav-under .swipe-nav-preview { height: 100%; overflow: hidden; }
+.swipe-nav-under .markdown-preview-view { overflow: hidden; }/* mimics Live Preview: no reading-mode block margins (blank lines become margin-top via JS) */
+.swipe-nav-body > :not(hr), .swipe-nav-body :is(ul, ol) { margin-block: 0 !important; } /* hr: theme margins handled in JS */
+/* +.089em: the inline-block fold-indicator LP puts on headings makes the line taller (measured: 2.3px of 25.9px) */
+.swipe-nav-body > :is(h1, h2, h3, h4, h5, h6) { padding-top: calc(var(--p-spacing) + .089em); }
+/* set by JS per block, mirroring LP spacing */
+.swipe-nav-body > .swipe-nav-hr { margin-bottom: 0 !important; }
+.swipe-nav-body > .swipe-nav-after-heading { padding-top: var(--p-spacing-empty); }
+.swipe-nav-body > .swipe-nav-heading-gap { padding-top: .089em; }
+
+.swipe-nav-title-host { position: relative; }
+
